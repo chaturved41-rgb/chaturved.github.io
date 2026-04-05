@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxTime Watches - Premium & Basic Timepieces</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        }
+        header {
+            background: rgba(0,0,0,0.9);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+        .hero {
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23000" width="1200" height="600"/><circle fill="%23ffd700" cx="200" cy="150" r="80"/><circle fill="%23ffd700" cx="1000" cy="450" r="60"/><path fill="%23ccc" d="M300 200 Q400 100 500 200 T700 200"/></svg>') center/cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            margin-top: 80px;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+        .btn {
+            display: inline-block;
+            background: #ffd700;
+            color: #000;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-top: 1rem;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255,215,0,0.4);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        .section {
+            margin-bottom: 5rem;
+        }
+        .section h2 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 3rem;
+            color: #ffd700;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .watch-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .watch-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+        }
+        .watch-img {
+            height: 250px;
+            background: linear-gradient(45deg, #ddd, #eee);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: #666;
+        }
+        .watch-info {
+            padding: 2rem;
+        }
+        .watch-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .price {
+            font-size: 2rem;
+            color: #e74c3c;
+            font-weight: bold;
+            margin: 1rem 0;
+        }
+        .features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+        .features li {
+            padding: 0.3rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .features li::before {
+            content: "✓";
+            color: #27ae60;
+            font-weight: bold;
+        }
+        .special-section {
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            padding: 4rem;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .customization-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .custom-option {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            border: 2px dashed #ddd;
+            transition: all 0.3s;
+        }
+        .custom-option:hover {
+            border-color: #ffd700;
+            background: white;
+        }
+        .policy {
+            background: #2c3e50;
+            color: white;
+            padding: 3rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+        }
+        .complications {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem;
+            border-radius: 15px;
+        }
+        footer {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 5rem;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🕐 LuxTime</div>
+            <ul class="nav-links">
+                <li><a href="#mens">Men's Watches</a></li>
+                <li><a href="#womens">Women's Watches</a></li>
+                <li><a href="#custom">Customize</a></li>
+                <li><a href="#specialties">Specialties</a></li>
+                <li><a href="#contact">Customer Care</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Premium & Basic Watches</h1>
+            <p>Discover timeless elegance for every occasion</p>
+            <a href="#mens" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Men's Watches -->
+        <section id="mens" class="section">
+            <h2>Men's Watches</h2>
+            <div class="grid">
+                <div class="watch-card">
+                    <div class="watch-img">⌚</div>
+                    <div class="watch-info">
+                        <h3>Classic Quartz</h3>
+                        <div class="price">$149</div>
+                        <ul class="features">
+                            <li>Quartz Movement</li>
+                            <li>Stainless Steel Case</li>
+                            <li>Water Resistant 50m</li>
+                            <li>Sapphire Crystal</li>
+                        </ul>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="watch-card">
+                    <div class="watch-img">⚙️</div>
+                    <div class="watch-info">
+                        <h3>Mechanical Heritage</h3>
+                        <div class="price">$899</div>
+                        <ul class="features">
+                            <li>Manual Mechanical</li>
+                            <li>21 Jewels</li>
+                            <li>Power Reserve 40h</li>
+                            <li>Exhibition Caseback</li>
+                        </ul>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="watch-card">
+                    <div class="watch-img">🔄</div>
+                    <div class="watch-info">
+                        <h3>Automatic Diver</h3>
+                        <div class="price">$1,299</div>
+                        <ul class="features">
+                            <li>Automatic Movement</li>
+                            <li>300m Water Resistance</li>
+                            <li>Unidirectional Bezel</li>
+                            <li>Luminous Hands</li>
+                        </ul>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Women's Watches -->
+        <section id="womens" class="section">
+            <h2>Women's Watches</h2>
+            <div class="grid">
+                <div class="watch-card">
+                    <div class="watch-img">💎</div>
+                    <div class="watch-info">
+                        <h3>Quartz Elegance</h3>
+                        <div class="price">$199</div>
+                        <ul class="features">
+                            <li>Quartz Precision</li>
+                            <li>Mother of Pearl Dial</li>
+                            <li>Diamond Accents</li>
+                            <li>Swarovski Crystals</li>
+                        </ul>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="watch-card">
+                    <div class="watch-img">🌹</div>
+                    <div class="watch-info">
+                        <h3>Mechanical Rose Gold</h3>
+                        <div class="price">$1,499</div>
+                        <ul class="features">
+                            <li>Manual Wind Movement</li>
+                            <li>18K Rose Gold Plating</li>
+                            <li>Guilloché Dial</li>
+                            <li>Alligator Strap</li>
+                        </ul>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="watch-card">
+                    <div class="watch-img">✨</div>
+                    <div class="watch-info">
+                        <h3>Automatic Slim</h3>
+                        <div class="price">$2,199</div>
+                        <ul class="features">
+                            <li>Self-Winding Automatic</li>
+                            <li>Ultra-Thin 7mm Case</li>
+                            <li>Date & Day Display</li>
+                            <li>Ceramic Bezel</li>
+                        </ul>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customization Section -->
+        <section id="custom" class="section">
+            <h2 id="customize">Watch Customization & MODs</h2>
+            <div class="special-section">
+                <p>Create your perfect timepiece with our customization service</p>
+                <div class="customization-grid">
+                    <div class="custom-option">
+                        <h3>🛠️ Case & Dial</h3>
+                        <p>Choose from 50+ case styles, colors, and dial patterns</p>
+                    </div>
+                    <div class="custom-option">
+                        <h3>⏰ Movement</h3>
+                        <p>Quartz, Mechanical, or Automatic - Swiss or Japanese made</p>
+                    </div>
+                    <div class="custom-option">
+                        <h3>💎 Hands & Markers</h3>
+                        <p>Luminescent, diamond-set, or custom engraved</p>
+                    </div>
+                    <div class="custom-option">
+                        <h3>🔗 Straps & Bracelets</h3>
+                        <p>Leather, metal, rubber, or fabric in any color</p>
+                    </div>
+                </div>
+                <a href="#" class="btn" style="margin-top: 2rem;">Start Customization - $50 deposit</a>
+            </div>
+        </section>
+
+        <!-- Specialties & Complications -->
+        <section id="specialties" class="section">
+            <h2>Watch Specialties & Complications</h2>
+            <div class="complications">
+                <div class="grid">
+                    <div>
+                        <h3>🏆 Tourbillon</h3>
+                        <p>Gravity-defying mechanism for ultimate precision</p>
+                    </div>
+                    <div>
+                        <h3>🌙 Moonphase</h3>
+                        <p>Beautiful lunar cycle display with 122-year accuracy</p>
+                    </div>
+                    <div>
+                        <h3>📅 Perpetual Calendar</h3>
+                        <p>Automatically adjusts for leap years until 2100</p>
+                    </div>
+                    <div>
+                        <h3>⚡ Chronograph</h3>
+                        <p>Stopwatch function with 1/10th second precision</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Care & Policy -->
+        <section id="contact" class="section">
+            <h2>Customer Care & Policies</h2>
+            <div class="policy">
+                <h3>🛡️ 7-Day Return Policy</h3>
+                <p>Full refund within 7 days from order delivery. Items must be unworn with original packaging.</p>
+                
+                <div style="margin-top: 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                    <div>
+                        <h4>📞 Customer Support</h4>
+                        <p>+1 (555) 123-4567<br>support@luxtime.com<br>24/7 Live Chat</p>
+                    </div>
+                    <div>
+                        <h4>🚚 Free Shipping</h4>
+                        <p>Worldwide free shipping on orders over $200<br>2-5 business days delivery</p>
+                    </div>
+                    <div>
+                        <h4>🔒 Secure Payment</h4>
+                        <p>SSL encrypted • All major cards • PayPal • Apple Pay</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LuxTime Watches. All rights reserved. | Crafted with precision since 1895</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add to cart animation
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                if (this.textContent.includes('Add to Cart')) {
+                    const ripple = document.createElement('span');
+                    ripple.style.cssText = `
+                        position: absolute;
+                        border-radius: 50%;
+                        background: rgba(255,215,0,0.6);
+                        transform: scale(0);
+                        animation: ripple 0.6s linear;
+                        top: 50%;
+                        left: 50%;
+                        width: 20px;
+                        height: 20px;
+                    `;
+                    this.style.position = 'relative';
+                    this.style.overflow = 'hidden';
+                    this.appendChild(ripple);
+                    this.textContent = 'Added!';
+                    setTimeout(() => {
+                        this.textContent = 'Add to Cart';
+                    }, 1500);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
