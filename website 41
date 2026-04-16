@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chaturved Digital Agency</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif;}
+
+body{background:#0f172a;color:#fff;}
+
+header{
+  background:#020617;
+  padding:20px 50px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+header h1{font-size:22px;color:#38bdf8;}
+
+nav a{
+  margin-left:20px;
+  text-decoration:none;
+  color:#fff;
+  font-size:14px;
+}
+
+.hero{
+  padding:100px 20px;
+  text-align:center;
+}
+
+.hero h2{
+  font-size:40px;
+  margin-bottom:15px;
+}
+
+.hero p{
+  color:#94a3b8;
+  margin-bottom:20px;
+}
+
+.btn{
+  background:#38bdf8;
+  color:#000;
+  padding:12px 25px;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.section{
+  padding:60px 20px;
+  text-align:center;
+}
+
+.section h2{
+  margin-bottom:30px;
+}
+
+.cards{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+
+.card{
+  background:#1e293b;
+  padding:25px;
+  width:280px;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.contact p{
+  margin:10px 0;
+}
+
+footer{
+  background:#020617;
+  padding:20px;
+  text-align:center;
+  font-size:14px;
+  color:#94a3b8;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+  <h1>Chaturved Agency</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h2>We Help Businesses Grow Online</h2>
+  <p>Professional websites and powerful ads to bring real customers.</p>
+  <a href="#contact" class="btn">Get Started</a>
+</section>
+
+<section class="section" id="services">
+  <h2>Our Services</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Website Development</h3>
+      <p>Modern, fast and responsive websites that convert visitors.</p>
+    </div>
+
+    <div class="card">
+      <h3>Ads & Promotion</h3>
+      <p>Google, Facebook & Instagram ads for real leads.</p>
+    </div>
+
+    <div class="card">
+      <h3>Full Business Growth</h3>
+      <p>Complete solution to build and grow your business online.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="portfolio">
+  <h2>Our Work</h2>
+  <div class="cards">
+    <div class="card">Business Website</div>
+    <div class="card">Landing Page</div>
+    <div class="card">E-commerce Store</div>
+  </div>
+</section>
+
+<section class="section contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>Have a project? Let’s work together.</p>
+
+  <p><strong>📞 +91 9000332922</strong></p>
+  <p><strong>📞 +91 7842010099</strong></p>
+  <p><strong>📧 chaturved41@gmail.com</strong></p>
+
+  <a href="https://wa.me/919000332922" class="btn">Chat on WhatsApp</a>
+</section>
+
+<footer>
+  <p>© 2026 Chaturved Digital Agency. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
