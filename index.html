@@ -1,306 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LuxTime Watches - Premium & Basic Timepieces</title>
-    <style>
-        /* ------------------ General Styles ------------------ */
-        * { margin:0; padding:0; box-sizing:border-box; }
-        body { font-family:'Arial',sans-serif; line-height:1.6; color:#333; background:linear-gradient(135deg,#1e3c72 0%,#2a5298 100%);}
-        header { background: rgba(0,0,0,0.9); color:white; padding:1rem 0; position:fixed; width:100%; top:0; z-index:1000; }
-        nav { display:flex; justify-content:space-between; align-items:center; max-width:1200px; margin:0 auto; padding:0 2rem; }
-        .logo { font-size:2rem; font-weight:bold; }
-        .nav-links { display:flex; list-style:none; gap:2rem; }
-        .nav-links a { color:white; text-decoration:none; transition:color 0.3s; }
-        .nav-links a:hover { color:#ffd700; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        /* ------------------ Hero Section ------------------ */
-        .hero { background:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23000" width="1200" height="600"/><circle fill="%23ffd700" cx="200" cy="150" r="80"/><circle fill="%23ffd700" cx="1000" cy="450" r="60"/><path fill="%23ccc" d="M300 200 Q400 100 500 200 T700 200"/></svg>') center/cover; height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; color:white; margin-top:80px; }
-        .hero h1 { font-size:4rem; margin-bottom:1rem; text-shadow:2px 2px 4px rgba(0,0,0,0.8);}
-        .btn { display:inline-block; background:#ffd700; color:#000; padding:1rem 2rem; text-decoration:none; border-radius:50px; font-weight:bold; transition:transform 0.3s,box-shadow 0.3s; margin-top:1rem; }
-        .btn:hover { transform:translateY(-3px); box-shadow:0 10px 20px rgba(255,215,0,0.4); }
+<title>Grow Agency | Websites, Ads & AI Automation</title>
 
-        /* ------------------ Sections ------------------ */
-        .container { max-width:1200px; margin:0 auto; padding:4rem 2rem; }
-        .section { margin-bottom:5rem; }
-        .section h2 { text-align:center; font-size:3rem; margin-bottom:3rem; color:#ffd700; }
-        .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:2rem; }
-        .watch-card { background:white; border-radius:20px; overflow:hidden; box-shadow:0 20px 40px rgba(0,0,0,0.1); transition:transform 0.3s,box-shadow 0.3s; }
-        .watch-card:hover { transform:translateY(-10px); box-shadow:0 30px 60px rgba(0,0,0,0.2); }
-        .watch-img { height:250px; background:linear-gradient(45deg,#ddd,#eee); display:flex; align-items:center; justify-content:center; font-size:4rem; color:#666; }
-        .watch-info { padding:2rem; }
-        .watch-info h3 { font-size:1.5rem; margin-bottom:0.5rem; }
-        .price { font-size:2rem; color:#e74c3c; font-weight:bold; margin:1rem 0; }
-        .features { list-style:none; margin-bottom:1.5rem; }
-        .features li { padding:0.3rem 0; display:flex; align-items:center; gap:0.5rem; }
-        .features li::before { content:"✓"; color:#27ae60; font-weight:bold; }
+<meta name="description" content="Premium websites, ads and AI automation systems for growing brands.">
 
-        /* ------------------ Customization & Special Sections ------------------ */
-        .special-section { background:rgba(255,255,255,0.95); border-radius:20px; padding:4rem; text-align:center; margin:2rem 0; }
-        .customization-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; margin-top:2rem; }
-        .custom-option { background:#f8f9fa; padding:2rem; border-radius:15px; border:2px dashed #ddd; transition:all 0.3s; }
-        .custom-option:hover { border-color:#ffd700; background:white; }
-        .policy { background:#2c3e50; color:white; padding:3rem; border-radius:15px; margin:2rem 0; }
-        .complications { background:linear-gradient(135deg,#667eea 0%,#764ba2 100%); color:white; padding:3rem; border-radius:15px; }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        /* ------------------ Footer ------------------ */
-        footer { background:#000; color:white; text-align:center; padding:3rem 0; margin-top:5rem; }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-        /* ------------------ Responsive ------------------ */
-        @media (max-width:768px) { .nav-links { display:none; } .hero h1 { font-size:2.5rem; } }
-    </style>
+<link rel="stylesheet" href="css/style.css">
 </head>
+<div class="ai-chat-btn" id="chatBtn">
+🤖
+</div>
+
+<div class="ai-chat-box" id="chatBox">
+
+<div class="chat-header">
+GrowAI Assistant
+</div>
+
+<div class="chat-body">
+
+<p><strong>Hi 👋 I'm GrowAI</strong></p>
+
+<p>How can I help you?</p>
+
+<button onclick="alert('We build premium websites for businesses.')">
+Website Development
+</button>
+
+<button onclick="alert('We create Meta Ads to generate leads and sales.')">
+Meta Ads
+</button>
+
+<button onclick="alert('We create Google Ads campaigns for growth.')">
+Google Ads
+</button>
+
+<button onclick="alert('We build AI systems that automate customer interactions.')">
+AI Automation
+</button>
+
+<button onclick="window.location.href='booking.html'">
+Book Free Call
+</button>
+
+</div>
+
+</div>
+<button id="topBtn">↑</button>
 <body>
-    <!-- ------------------ Header ------------------ -->
-    <header>
-        <nav>
-            <div class="logo">🕐 LuxTime</div>
-            <ul class="nav-links">
-                <li><a href="#mens">Men's Watches</a></li>
-                <li><a href="#womens">Women's Watches</a></li>
-                <li><a href="#custom">Customize</a></li>
-                <li><a href="#specialties">Specialties</a></li>
-                <li><a href="#contact">Customer Care</a></li>
-            </ul>
-        </nav>
-    </header>
+<div id="progressBar"></div>
 
-    <!-- ------------------ Hero ------------------ -->
-    <section class="hero">
-        <div>
-            <h1>Premium & Basic Watches</h1>
-            <p>Discover timeless elegance for every occasion</p>
-            <a href="#mens" class="btn">Shop Now</a>
-        </div>
-    </section>
+<div class="cursor-glow"></div>
 
-    <div class="container">
-        <!-- ------------------ Men's Watches ------------------ -->
-        <section id="mens" class="section">
-            <h2>Men's Watches</h2>
-            <div class="grid">
-                <div class="watch-card">
-                    <div class="watch-img">⌚</div>
-                    <div class="watch-info">
-                        <h3>Classic Quartz</h3>
-                        <div class="price">$149</div>
-                        <ul class="features">
-                            <li>Quartz Movement</li>
-                            <li>Stainless Steel Case</li>
-                            <li>Water Resistant 50m</li>
-                            <li>Sapphire Crystal</li>
-                        </ul>
-                        <a href="#" class="btn">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="watch-card">
-                    <div class="watch-img">⚙️</div>
-                    <div class="watch-info">
-                        <h3>Mechanical Heritage</h3>
-                        <div class="price">$899</div>
-                        <ul class="features">
-                            <li>Manual Mechanical</li>
-                            <li>21 Jewels</li>
-                            <li>Power Reserve 40h</li>
-                            <li>Exhibition Caseback</li>
-                        </ul>
-                        <a href="#" class="btn">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="watch-card">
-                    <div class="watch-img">🔄</div>
-                    <div class="watch-info">
-                        <h3>Automatic Diver</h3>
-                        <div class="price">$1,299</div>
-                        <ul class="features">
-                            <li>Automatic Movement</li>
-                            <li>300m Water Resistance</li>
-                            <li>Unidirectional Bezel</li>
-                            <li>Luminous Hands</li>
-                        </ul>
-                        <a href="#" class="btn">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+<div class="background-glow glow-1"></div>
+<div class="background-glow glow-2"></div>
 
-        <!-- ------------------ Women's Watches ------------------ -->
-        <section id="womens" class="section">
-            <h2>Women's Watches</h2>
-            <div class="grid">
-                <div class="watch-card">
-                    <div class="watch-img">💎</div>
-                    <div class="watch-info">
-                        <h3>Quartz Elegance</h3>
-                        <div class="price">$199</div>
-                        <ul class="features">
-                            <li>Quartz Precision</li>
-                            <li>Mother of Pearl Dial</li>
-                            <li>Diamond Accents</li>
-                            <li>Swarovski Crystals</li>
-                        </ul>
-                        <a href="#" class="btn">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="watch-card">
-                    <div class="watch-img">🌹</div>
-                    <div class="watch-info">
-                        <h3>Mechanical Rose Gold</h3>
-                        <div class="price">$1,499</div>
-                        <ul class="features">
-                            <li>Manual Wind Movement</li>
-                            <li>18K Rose Gold Plating</li>
-                            <li>Guilloché Dial</li>
-                            <li>Alligator Strap</li>
-                        </ul>
-                        <a href="#" class="btn">Add to Cart</a>
-                    </div>
-                </div>
-                <div class="watch-card">
-                    <div class="watch-img">✨</div>
-                    <div class="watch-info">
-                        <h3>Automatic Slim</h3>
-                        <div class="price">$2,199</div>
-                        <ul class="features">
-                            <li>Self-Winding Automatic</li>
-                            <li>Ultra-Thin 7mm Case</li>
-                            <li>Date & Day Display</li>
-                            <li>Ceramic Bezel</li>
-                        </ul>
-                        <a href="#" class="btn">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+<header class="navbar">
 
-        <!-- ------------------ Customization ------------------ -->
-        <section id="custom" class="section">
-            <h2>Watch Customization & MODs</h2>
-            <div class="special-section">
-                <p>Create your perfect timepiece with our customization service</p>
-                <div class="customization-grid">
-                    <div class="custom-option">
-                        <h3>🛠️ Case & Dial</h3>
-                        <p>Choose from 50+ case styles, colors, and dial patterns</p>
-                    </div>
-                    <div class="custom-option">
-                        <h3>⏰ Movement</h3>
-                        <p>Quartz, Mechanical, or Automatic - Swiss or Japanese made</p>
-                    </div>
-                    <div class="custom-option">
-                        <h3>💎 Hands & Markers</h3>
-                        <p>Luminescent, diamond-set, or custom engraved</p>
-                    </div>
-                    <div class="custom-option">
-                        <h3>🔗 Straps & Bracelets</h3>
-                        <p>Leather, metal, rubber, or fabric in any color</p>
-                    </div>
-                </div>
-                <a href="#" class="btn" style="margin-top:2rem;">Start Customization - $50 deposit</a>
-            </div>
-        </section>
+<div class="logo">
+GrowAgency
+</div>
 
-        <!-- ------------------ Specialties ------------------ -->
-        <section id="specialties" class="section">
-            <h2>Watch Specialties & Complications</h2>
-            <div class="complications">
-                <div class="grid">
-                    <div>
-                        <h3>🏆 Tourbillon</h3>
-                        <p>Gravity-defying mechanism for ultimate precision</p>
-                    </div>
-                    <div>
-                        <h3>🌙 Moonphase</h3>
-                        <p>Beautiful lunar cycle display with 122-year accuracy</p>
-                    </div>
-                    <div>
-                        <h3>📅 Perpetual Calendar</h3>
-                        <p>Automatically adjusts for leap years until 2100</p>
-                    </div>
-                    <div>
-                        <h3>⚡ Chronograph</h3>
-                        <p>Stopwatch function with 1/10th second precision</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<div class="menu-toggle" id="menuToggle">
+☰
+</div>
 
-        <!-- ------------------ Customer Care ------------------ -->
-        <section id="contact" class="section">
-            <h2>Customer Care & Policies</h2>
-            <div class="policy">
-                <h3>🛡️ 7-Day Return Policy</h3>
-                <p>Full refund within 7 days from order delivery. Items must be unworn with original packaging.</p>
-                <div style="margin-top:2rem; display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem;">
-                    <div>
-                        <h4>📞 Customer Support</h4>
-                        <p>+1 (555) 123-4567<br>support@luxtime.com<br>24/7 Live Chat</p>
-                    </div>
-                    <div>
-                        <h4>🚚 Free Shipping</h4>
-                        <p>Worldwide free shipping on orders over $200<br>2-5 business days delivery</p>
-                    </div>
-                    <div>
-                        <h4>🔒 Secure Payment</h4>
-                        <p>SSL encrypted • All major cards • PayPal • Apple Pay</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+<nav id="navMenu">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<a href="booking.html" class="cta-btn">
+Get Your Free Growth Plan
+</a>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 LuxTime Watches. All rights reserved. | Crafted with precision since 1895</p>
-    </footer>
+</header>
 
-    <!-- ------------------ Corrected Script ------------------ -->
-    <script>
-        // Smooth scrolling for valid navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
-            anchor.addEventListener('click',function(e){
-                const target=this.getAttribute('href');
-                if(target && target!=="#"){
-                    e.preventDefault();
-                    const elem=document.querySelector(target);
-                    if(elem){ elem.scrollIntoView({behavior:'smooth'}); }
-                }
-            });
-        });
+<section class="hero">
 
-        // Add-to-Cart ripple animation
-        document.querySelectorAll('.btn').forEach(btn=>{
-            btn.addEventListener('click',function(e){
-                if(this.textContent.includes('Add to Cart')){
-                    const ripple=document.createElement('span');
-                    ripple.style.cssText=`
-                        position:absolute;
-                        border-radius:50%;
-                        background:rgba(255,215,0,0.6);
-                        transform:scale(0);
-                        animation:ripple 0.6s linear;
-                        top:50%;
-                        left:50%;
-                        width:20px;
-                        height:20px;
-                        pointer-events:none;
-                    `;
-                    this.style.position='relative';
-                    this.style.overflow='hidden';
-                    this.appendChild(ripple);
-                    const original=this.textContent;
-                    this.textContent='Added!';
-                    setTimeout(()=>{ this.textContent=original; ripple.remove(); },1500);
-                }
-            });
-        });
+<div class="badge">
+🚀 Websites • Ads • AI Automation
+</div>
 
-        // Ripple keyframes via JS
-        const styleSheet=document.createElement("style");
-        styleSheet.type="text/css";
-        styleSheet.innerText=`@keyframes ripple{to{transform:scale(4);opacity:0;}}`;
-        document.head.appendChild(styleSheet);
-    </script>
+<h1>
+We Help Businesses
+Generate More Leads,
+Sales & Growth
+</h1>
+
+<p>
+Premium websites, AI automation, Meta Ads, Google Ads and growth systems designed to generate more leads and sales.
+</p>
+
+<div class="hero-buttons">
+
+<a href="booking.html" class="primary-btn">
+Book Free Strategy Call
+</a>
+
+<a href="portfolio.html" class="secondary-btn">
+View Portfolio
+</a>
+
+</div>
+
+</section>
+
+<section class="services">
+
+<h2>Our Services</h2>
+
+<div class="service-grid">
+
+<div class="service-card">
+<h3>Website Development</h3>
+<p>High-converting premium websites built for growth.</p>
+</div>
+
+<div class="service-card">
+<h3>Meta Ads</h3>
+<p>Lead generation campaigns that bring customers.</p>
+</div>
+
+<div class="service-card">
+<h3>Google Ads</h3>
+<p>Reach people actively searching for your services.</p>
+</div>
+
+<div class="service-card">
+<h3>AI Calling Agents</h3>
+<p>AI systems that answer and qualify leads automatically.</p>
+</div>
+
+<div class="service-card">
+<h3>SEO</h3>
+<p>Improve rankings and generate organic traffic.</p>
+</div>
+
+<div class="service-card">
+<h3>Creative Studio Ads</h3>
+<p>Professional ad creatives that attract attention.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="testimonials">
+
+<h2>What Clients Say</h2>
+
+<div class="testimonial-grid">
+
+<div class="testimonial-card">
+<p>
+"Grow Agency completely transformed our online presence. The website looks incredible and brought us more leads."
+</p>
+<h4>- Local Business Owner</h4>
+</div>
+
+<div class="testimonial-card">
+<p>
+"Their ad creatives and landing pages helped us increase conversions dramatically."
+</p>
+<h4>- Ecommerce Brand</h4>
+</div>
+
+<div class="testimonial-card">
+<p>
+"Professional, fast, and highly skilled. The AI automation setup saved us hours every week."
+</p>
+<h4>- Startup Founder</h4>
+</div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<h2>Trusted By Growing Brands</h2>
+
+<div class="stats-grid">
+
+<div class="stat-card">
+<h3 class="counter" data-target="50">0</h3>
+<p>Businesses Helped</p>
+</div>
+
+<div class="stat-card">
+<h3 class="counter" data-target="100">0</h3>
+<p>Projects Delivered</p>
+</div>
+
+<div class="stat-card">
+<h3 class="counter" data-target="500">0</h3>
+<p>Ad Impressions Generated</p>
+</div>
+
+<div class="stat-card">
+<h3 class="counter" data-target="24">0</h3>
+<p>AI Automation Support</p>
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<h3>Grow Agency</h3>
+
+<p>Websites • Ads • AI Automation</p>
+
+<p>© 2026 Grow Agency. All Rights Reserved.</p>
+<section class="pricing">
+
+<h2>Solutions For Every Business</h2>
+
+<div class="pricing-grid">
+
+<div class="pricing-card">
+
+<h3>Starter</h3>
+
+<p>Perfect for small businesses getting online.</p>
+
+<ul>
+<li>Business Website</li>
+<li>Mobile Responsive</li>
+<li>Contact Form</li>
+<li>WhatsApp Integration</li>
+</ul>
+
+<a href="booking.html" class="primary-btn">
+Get Custom Quote
+</a>
+
+</div>
+
+<div class="pricing-card featured">
+
+<h3>Growth</h3>
+
+<p>Best for businesses looking to scale.</p>
+
+<ul>
+<li>Premium Website</li>
+<li>SEO Setup</li>
+<li>Lead Generation System</li>
+<li>Analytics Setup</li>
+</ul>
+
+<a href="booking.html" class="primary-btn">
+Get Custom Quote
+</a>
+
+</div>
+
+<div class="pricing-card">
+
+<h3>Scale</h3>
+
+<p>Advanced growth systems and automation.</p>
+
+<ul>
+<li>Custom Website</li>
+<li>Meta Ads</li>
+<li>Google Ads</li>
+<li>AI Automation</li>
+</ul>
+
+<a href="booking.html" class="primary-btn">
+Get Custom Quote
+</a>
+
+</div>
+
+</div>
+
+</section>
+<section class="process">
+
+<h2>Our Process</h2>
+
+<div class="process-grid">
+
+<div class="process-card">
+<div class="process-number">1</div>
+<h3>Discovery Call</h3>
+<p>We understand your business, goals and challenges.</p>
+</div>
+
+<div class="process-card">
+<div class="process-number">2</div>
+<h3>Strategy</h3>
+<p>We create a custom growth plan tailored to your needs.</p>
+</div>
+
+<div class="process-card">
+<div class="process-number">3</div>
+<h3>Design & Build</h3>
+<p>We develop your website, ads or AI automation system.</p>
+</div>
+
+<div class="process-card">
+<div class="process-number">4</div>
+<h3>Launch</h3>
+<p>Everything is tested and launched professionally.</p>
+</div>
+
+<div class="process-card">
+<div class="process-number">5</div>
+<h3>Growth</h3>
+<p>We optimize performance and help scale results.</p>
+</div>
+
+</div>
+
+</section>
+<section class="faq">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="faq-item">
+
+<div class="faq-question">
+How long does a website take?
+</div>
+
+<div class="faq-answer">
+Most websites are completed within 7–14 days depending on project scope.
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<div class="faq-question">
+How long does a website take?
+</div>
+
+<div class="faq-answer">
+Most websites are completed within 7–14 days depending on project scope.
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<div class="faq-question">
+How long does a website take?
+</div>
+
+<div class="faq-answer">
+Most websites are completed within 7–14 days depending on project scope.
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<div class="faq-question">
+How long does a website take?
+</div>
+
+<div class="faq-answer">
+Most websites are completed within 7–14 days depending on project scope.
+</div>
+
+</div>
+
+<div class="faq-item">
+
+<div class="faq-question">
+How long does a website take?
+</div>
+
+<div class="faq-answer">
+Most websites are completed within 7–14 days depending on project scope.
+</div>
+
+</div>
+</section>
+<section class="final-cta">
+
+<h2>Ready To Grow Your Business?</h2>
+
+<p>
+Let's build a website, ad system or AI automation that generates more leads and sales.
+</p>
+
+<div class="hero-buttons">
+
+<a href="booking.html" class="primary-btn">
+Book Free Strategy Call
+</a>
+
+<a href="contact.html" class="secondary-btn">
+Contact Us
+</a>
+
+</div>
+
+</section>
+</footer>
+
+<script src="js/script.js"></script>
+
+<a href="https://wa.me/917842010099?text=Hi%20Grow%20Agency%2C%20I%20want%20a%20website%20for%20my%20business."
+class="whatsapp-btn"
+target="_blank">
+💬
+</a>
 </body>
 </html>
